@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/safiyamirza/fabulous-foliage/issues"
   },
-  "homepage": "https://github.com/safiyamirza/fabulous-foliage#readme"
+  "homepage": "https://github.com/safiyamirza/fabulous-foliage#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }

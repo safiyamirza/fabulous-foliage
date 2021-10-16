@@ -1,0 +1,19 @@
+{
+  "name": "fabulousfoliageproject",
+  "version": "1.0.0",
+  "description": "Nucamp portfolio project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safiyamirza/fabulous-foliage.git"
+  },
+  "author": "Safiya Mirza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safiyamirza/fabulous-foliage/issues"
+  },
+  "homepage": "https://github.com/safiyamirza/fabulous-foliage#readme"
+}

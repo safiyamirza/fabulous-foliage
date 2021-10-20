@@ -4,7 +4,8 @@
   "description": "Nucamp portfolio project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/safiyamirza/fabulous-foliage/issues"
   },
-  "homepage": "https://github.com/safiyamirza/fabulous-foliage#readme"
+  "homepage": "https://github.com/safiyamirza/fabulous-foliage#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

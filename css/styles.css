@@ -1,0 +1,27 @@
+.img-fluid {
+max-width: 80%;
+height: auto;
+}
+
+/* .carousel {
+    position: absolute;
+    height: 300px
+}
+
+.carousel.item {
+    height: 300px
+} */
+/* .carousel-inner {
+    height: auto;
+    width: auto;
+} */
+
+.carousel {
+    width:740px;
+    height:460px;
+  }
+
+.site-footer {
+    background-color:whitesmoke;
+    padding: 15px 0;
+ }

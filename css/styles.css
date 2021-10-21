@@ -3,25 +3,29 @@ max-width: 80%;
 height: auto;
 }
 
-/* .carousel {
-    position: absolute;
-    height: 300px
+h5 {
+    font-weight: bold;
 }
-
-.carousel.item {
-    height: 300px
-} */
-/* .carousel-inner {
-    height: auto;
-    width: auto;
-} */
-
+h6 {
+    font-style: italic;
+}
 .carousel {
     width:740px;
     height:460px;
   }
 
+.card {
+    width:320px;
+    padding: 10px;
+}
+
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
 .site-footer {
     background-color:whitesmoke;
     padding: 15px 0;
  }
+
+ 

@@ -10,232 +10,525 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+
     <title>Fabulous Foliage</title>
 
 
 </head>
 
 <body>
-    <header class="jumbotron junbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-center">
-                    <a href=index.html>
-                        <img src="img/new-logo.png" alt="website logo" class="img-fluid rounded mx-auto d-block" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header class="jumbotron junbotron-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col align-self-center">
+                  <a href=index.html>
+                      <img src="img/new-logo.png" alt="website logo" class="img-fluid rounded mx-auto d-block" />
+                  </a>
+              </div>
+          </div>
+      </div>
+  </header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-fade">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <!-- mini logo image -->
-              <img src="img/resized-mini-logo.png" alt="navbar logo image">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="identification.html">Identification</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sunlight.html">Sunlight</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="water.html">Water</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="fertilizer.html">Fertilizer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="planters.html">Planters</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-fade">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+          <!-- mini logo image -->
+          <img src="img/resized-mini-logo.png" alt="navbar logo image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Toxic Plants</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Planters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forum</a>
+        </li>
+        </ul>
+        <form class="d-flex ms-auto">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- ========================================================================================================================== -->
+  <!-- Cards -->
+  <div class="container">
+    <!-- ROW 1-->
+    <div class="row mt-5">
+      <!-- <div class="row row-cols-1 row-cols-md-2 g-4"> -->
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/pothos-leaves.jpg" class="card-img-top" alt="Pothos Leaves">
+          <div class="card-body">
+            <h5 class="card-title">Pothos Plant</h5>
+            <h6>Epipremnum aureum</h6>
+            <p class="card-text">Pothos plants have a spade shaped leaf and come in a variety of colors: dark green, bright lemon and lime-colored, green and white leaves. The leaves feel thick and waxy.</p>
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#pothosModal">
+                Care Guide
+              </button>
+              <!-- Pothos Modal -->
+              <div class="modal fade" id="pothosModal" tabindex="-1" aria-labelledby="pothosModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="pothosModalLabel">Pothos Care</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                      <p>These plants need low light to bright indirect light. Leaves will burn and dry out in bright direct light.</p>
+                      <h5>Water<i class="fa fa-tint"></i></h5>
+                      <p>Soil needs to completely dry out in between watering.</p>
+                      <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                      <p>Fertilize about once every three months.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-    </nav>
-<!-- Cards -->
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/pothos-leaves.jpg" class="card-img-top" alt="Pothos Peaves">
-            <div class="card-body">
-              <h5 class="card-title">Pothos Plant</h5>
-              <h6>Epipremnum aureum</h6>
-              <p class="card-text">Pothos plants have a spade shaped leaf and come in a variety of colors: dark green, bright lemon and lime-colored, green and white leaves. The leaves feel thick and waxy.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/snake-plant.jpg" class="card-img-top" alt="Snake Plant Leaves">
+          <div class="card-body ">
+            <h5 class="card-title">Snake Plant</h5>
+            <h6>Sansevieria</h6>
+            <p class="card-text">Snake plants have long bladed-shaped leaves that stand straight in the air.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#snakeModal">
+              Care Guide
+            </button>
+            <!-- Snake Plant Modal -->
+            <div class="modal fade" id="snakeModal" tabindex="-1" aria-labelledby="snakeModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="snakeModalLabel">Snake Plant Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These plants do really well in bright indirect light but can also grow in low light conditions.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Soil needs to completely dry out in between watering.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize every 4-6 weeks.</p>
+                  </div>
+                  <div class="modal-footer mt-auto">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/snake-plant.jpg" class="card-img-top" alt="Snake Plant Leaves">
-            <div class="card-body ">
-              <h5 class="card-title">Snake Plant</h5>
-              <h6>Sansevieria</h6>
-              <p class="card-text">Snake plants have long bladed-shaped leaves that stand straight in the air.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/chinese-money-plant.jpg" class="card-img-top" alt="Chinese Money Plant">
+          <div class="card-body">
+            <h5 class="card-title">Chinese Money Plant</h5>
+            <h6>Pilea peperomioides</h6>
+            <p class="card-text">Chinese money plants have bright green, pancake-shaped leaves.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#cmpModal">
+              Care Guide
+            </button>
+            <!-- CMP Modal -->
+            <div class="modal fade" id="cmpModal" tabindex="-1" aria-labelledby="cmpModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="cmpModalLabel">Chinese Money Plant Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These plants thrive in bright indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Soil needs to completely dry out in between watering. They also need well draining potting soil.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize about once a month.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/chinese-money-plant.jpg" class="card-img-top" alt="Chinese Money Plant">
-            <div class="card-body">
-              <h5 class="card-title">Chinese Money Plant</h5>
-              <h6>Pilea peperomioides</h6>
-              <p class="card-text">Chinese money plants have bright green, pancake-shaped leaves.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/monstera-leaf.jpg" class="card-img-top" alt="Monstera Leaf">
-            <div class="card-body">
-              <h5 class="card-title">Monstera</h5>
-              <h6>Monstera</h6>
-              <p class="card-text">Monstera plants have large dark-green leaves with natural holes in them. In some species, the holes grow out to the edge.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/peace-lily.jpg" class="card-img-top" alt="Peace Lily Leaves">
-            <div class="card-body">
-              <h5 class="card-title">Peace Lily</h5>
-              <h6>Spathiphyllum</h6>
-              <p class="card-text">Peace lilies have shiny, long lance-shaped leaves that are dark green in color.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/jade-plant.jpg" class="card-img-top" alt="Jade Plant">
-            <div class="card-body">
-              <h5 class="card-title">Jade Plant</h5>
-              <h6>Crassula ovata</h6>
-              <p class="card-text">Jade plants have thick, oval shaped leaves that are dark green in color. They have woody stems and look like mini trees.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/zz-plant.jpg" class="card-img-top" alt="ZZ Plant">
-            <div class="card-body">
-              <h5 class="card-title">ZZ Plant</h5>
-              <h6>Zamioculcas zamiifolia</h6>
-              <p class="card-text">ZZ plants have long wand-like stems with fleshy,oval-shaped leaves. This plant looks like plastic due to its waxy, shiny coating. </p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/rubber-tree.jpg" class="card-img-top" alt="Rubber Tree">
-            <div class="card-body">
-              <h5 class="card-title">Rubber Tree</h5>
-              <h6>Ficus elastica</h6>
-              <p class="card-text">Rubber trees have thick, leathery leaves that are oval shaped and are attached to thick stems. </p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/birds-nest-fern.jpg" class="card-img-top" alt="Birds Nest Fern">
-            <div class="card-body">
-              <h5 class="card-title">Birds Nest Fern</h5>
-              <h6>Asplenium nidus</h6>
-              <p class="card-text">Bird's nest fern have long crinkled or wavy leaves and are light green in color. They closely resemble banana leaves. </p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/fiddle-leaf-fig.jpg" class="card-img-top" alt="Fiddle Leaf Fig">
-            <div class="card-body">
-              <h5 class="card-title">Fiddle Leaf Fig</h5>
-              <h6>Ficus lyrata</h6>
-              <p class="card-text">Fiddle leaf fig plants have large elongated leaves that resemble a fiddle.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/calathea.jpg" class="card-img-top" alt="Calathea">
-            <div class="card-body">
-              <h5 class="card-title">Calathea</h5>
-              <h6>Calathea</h6>
-              <p class="card-text">Calatheas have large dark green leaves with scalloped edges and silver brushmarks. The underside of the leaves are a burgandy purple color.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <img src="img/Peperomia.jpg" class="card-img-top" alt="Peperomia">
-            <div class="card-body">
-              <h5 class="card-title">Peperomia Watermelon Plant</h5>
-              <h6>Peperomia argyreia</h6>
-              <p class="card-text">The Peperomia watermelon plant have leaves that closely resemy a watermelon skin. The leaves are oval, heart-shaped and green with light silvery stripes.</p>
-              <a href="#" class="btn btn-outline-success text-center">Care Guide</a>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/monstera-leaf.jpg" class="card-img-top" alt="Monstera Leaf">
+          <div class="card-body">
+            <h5 class="card-title">Monstera</h5>
+            <h6>Monstera</h6>
+            <p class="card-text">Monstera plants have large dark-green leaves with natural holes in them. In some species, the holes grow out to the edge.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#monsteraModal">
+              Care Guide
+            </button>
+            <!-- Monstera Modal -->
+            <div class="modal fade" id="monsteraModal" tabindex="-1" aria-labelledby="monsteraModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="monsteraModalLabel">Monstera Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These guys do really well in bright to mediumm indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Soil needs to completely dry out in between watering and they need well draining soil with perlite or lava rocks.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize every 2 weeks to once a month during its growing season.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-  </body>
-
-  
-    <!-- Sidebar -->
-
-    <!-- <div class="container-fluid">
-        <div class="row row-content">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <a class="btn btn-success btn-lg text-black" href="identification.html" role="button" style="margin:20px">Identification</a>
-                        <a class="btn btn-success btn-lg text-black" href="sunlight.html" role="button" style="margin:20px">Sunlight</a>
-                        <a class="btn btn-success btn-lg text-black" href="water.html" role="button" style="margin:20px">Water</a>
-                        <a class="btn btn-success btn-lg text-black" href="fertilizer.html" role="button" style="margin:20px">Fertilizer</a>
-                        <a class="btn btn-success btn-lg text-black" href="planters.html" role="button" style="margin:20px">Planters</a>
-                    </ul>
+    <!-- ROW 2 -->
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/peace-lily.jpg" class="card-img-top" alt="Peace Lily Leaves">
+          <div class="card-body">
+            <h5 class="card-title">Peace Lily</h5>
+            <h6>Spathiphyllum</h6>
+            <p class="card-text">Peace lilies have shiny, long lance-shaped leaves that are dark green in color.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#plModal">
+              Care Guide
+            </button>
+            <!-- Peace Lily Modal -->
+            <div class="modal fade" id="plModal" tabindex="-1" aria-labelledby="plModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="plLabel">Peace Lily Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These plants do well in bright indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Should ahve moist soil, water only when top 1 inch of soil is dry. Do not overwater.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize once or twice a year.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/jade-plant.jpg" class="card-img-top" alt="Jade Plant">
+          <div class="card-body">
+            <h5 class="card-title">Jade Plant</h5>
+            <h6>Crassula ovata</h6>
+            <p class="card-text">Jade plants have thick, oval shaped leaves that are dark green in color. They have woody stems and look like mini trees.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#jadeModal">
+              Care Guide
+            </button>
+            <!-- Jade Plant Modal -->
+            <div class="modal fade" id="jadeModal" tabindex="-1" aria-labelledby="jadeModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="pothosModalLabel">Jade Plant Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>Jade plants do well in full sun.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Water only when top of soil is dry to the touch - do not overwater.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize every 6 months.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/zz-plant.jpg" class="card-img-top" alt="ZZ Plant">
+          <div class="card-body">
+            <h5 class="card-title">ZZ Plant</h5>
+            <h6>Zamioculcas zamiifolia</h6>
+            <p class="card-text">ZZ plants have long wand-like stems with fleshy,oval-shaped leaves. This plant looks like plastic due to its waxy, shiny coating. </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#zzModal">
+              Care Guide
+            </button>
+            <!-- ZZ Plant Modal -->
+            <div class="modal fade" id="zzModal" tabindex="-1" aria-labelledby="zzModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="zzModalLabel">ZZ Plant Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These plants need low to bright indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Let soil dry out in between watering. A well draining pot and soil will benefit this plant.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize once a month.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/rubber-tree.jpg" class="card-img-top" alt="Rubber Tree">
+          <div class="card-body">
+            <h5 class="card-title">Rubber Tree</h5>
+            <h6>Ficus elastica</h6>
+            <p class="card-text">Rubber trees have thick, leathery leaves that are oval shaped and are attached to thick stems. </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#rubberModal">
+              Care Guide
+            </button>
+            <!-- Rubber Tree Modal -->
+            <div class="modal fade" id="rubberModal" tabindex="-1" aria-labelledby="rubberModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="rubberModalLabel">Rubber Tree Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These guys need medium to bright indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Let soil dry out in between watering, water about every 1-2 weeks.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize every 2 weeks.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ROW 3 -->
+    <div class="row mt-5">
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/birds-nest-fern.jpg" class="card-img-top" alt="Birds Nest Fern">
+          <div class="card-body">
+            <h5 class="card-title">Birds Nest Fern</h5>
+            <h6>Asplenium nidus</h6>
+            <p class="card-text">Bird's nest fern have long crinkled or wavy leaves and are light green in color. They closely resemble banana leaves. </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#birdsModal">
+              Care Guide
+            </button>
+            <!-- Birds Nest Fern Modal -->
+            <div class="modal fade" id="birdsModal" tabindex="-1" aria-labelledby="birdsModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="birdsModalLabel">Birds Nest Fern Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>This plant thrives in filtered sun with moderate shade.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Soil should be moist at all times and water only when top of soil is dry to the touch. Do not overwater. A well draining soil is recommended.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize once a month.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/fiddle-leaf-fig.jpg" class="card-img-top" alt="Fiddle Leaf Fig">
+          <div class="card-body">
+            <h5 class="card-title">Fiddle Leaf Fig</h5>
+            <h6>Ficus lyrata</h6>
+            <p class="card-text">Fiddle leaf fig plants have large elongated leaves that resemble a fiddle.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#figModal">
+              Care Guide
+            </button>
+            <!-- Fiddle Leaf Fig Modal -->
+            <div class="modal fade" id="figModal" tabindex="-1" aria-labelledby="figModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="figModalLabel">Fiddle Leaf Fig Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>This plant loves bright filtered, it's recommended to put this plant in front of a window.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Water once a week or every 10 days - do not over water. Well draining soil is recommended.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize with every watering.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <i class="fa fa-exclamation-triangle">Toxic to pets</i>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/calathea.jpg" class="card-img-top" alt="Calathea">
+          <div class="card-body">
+            <h5 class="card-title">Calathea</h5>
+            <h6>Calathea</h6>
+            <p class="card-text">Calatheas have large dark green leaves with scalloped edges and silver brushmarks. The underside of the leaves are a burgandy purple color.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#calatheaModal">
+              Care Guide
+            </button>
+            <!-- Calathea Modal -->
+            <div class="modal fade" id="calatheaModal" tabindex="-1" aria-labelledby="calatheaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="calatheaModalLabel">Calathea Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>Calatheas do well in medium to bright indirect light but can also tolerate low indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Water every 1-2 weeks and allow soil to dry out halfway in between watering.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize every 4 weeks and only in the spring/summer.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100">
+          <img src="img/Peperomia.jpg" class="card-img-top" alt="Peperomia">
+          <div class="card-body">
+            <h5 class="card-title">Peperomia Watermelon Plant</h5>
+            <h6>Peperomia argyreia</h6>
+            <p class="card-text">The Peperomia watermelon plant have leaves that closely resemy a watermelon skin. The leaves are oval, heart-shaped and green with light silvery stripes.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#peperomiaModal">
+              Care Guide
+            </button>
+            <!-- Peperomia Watermelon Plant Modal -->
+            <div class="modal fade" id="peperomiaModal" tabindex="-1" aria-labelledby="peperiomiaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="peperomiaModalLabel">Peperomia Watermelon Plant Care</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Sunlight<i class="fa fa-sun-o"></i></h5>
+                    <p>These plants do well in medium to bright indirect light.</p>
+                    <h5>Water<i class="fa fa-tint"></i></h5>
+                    <p>Water only when top half of soil is dry.</p>
+                    <h5>Fertilizer<i class="fa fa-cutlery"></i></h5>
+                    <p>Fertilize once a month in the spring/summer.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Happy Planting</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================================================================================================================= -->
+  <footer class="site-footer text-center">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-6 col-sm-5">
+                <h5>Stay in the loop!</h5>
+                <a href="http://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href="http://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://youtube.com/"><i class="fa fa-youtube fa-2x"></i></a>
             </div>
         </div>
-    </div> -->
-       <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-5 text-center">
-                    <h5></h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- End script tags -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

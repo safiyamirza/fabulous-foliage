@@ -1,31 +1,99 @@
-.img-fluid {
-max-width: 80%;
-height: auto;
+.jumbotron {
+    background-image: ;
+}
+.custom {
+    width: 150px;
+    border-radius: 20px;
+    font-family: 'Fugaz One', cursive;
+    position: relative;
+}
+
+.card-img-top {
+    height: 17rem;
+    object-fit: cover;
+}
+img {
+    border-radius: 10%
+}
+
+.element {
+    display: block;
+    /* width: 900px;
+    height: 500px; */
+}
+
+h2 {
+    font-family: 'Fugaz One', cursive;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Fugaz One', cursive;
+    font-weight: bold;
 }
 
 h5 {
     font-weight: bold;
 }
+
 h6 {
     font-style: italic;
 }
+
 .carousel {
     width:740px;
     height:460px;
-  }
+}
+
+.carousel-inner .item img{
+    width: 100%;
+}
 
 .card {
     width:320px;
     padding: 10px;
 }
 
+.fa-sun-o {
+    color: #e8e73f;
+}
+
+.fa-tint {
+    color: #3d85c6;
+}
+
+.fa-cutlery {
+    color: #40717c
+}
+
+.fa-instagram {
+    color:black;
+    padding: 20px;
+}
+
+.fa-twitter {
+    color:black;
+    padding: 20px;
+}
+
+.fa-youtube {
+    color: black;
+    padding: 20px;
+}
+.fa-exclamation-triangle {
+    color:#990000;
+    
+}
+
 .row {
     display:flex;
     flex-wrap: wrap;
 }
+
+
 .site-footer {
     background-color:whitesmoke;
-    padding: 15px 0;
+    padding: 15px;
  }
 
  
